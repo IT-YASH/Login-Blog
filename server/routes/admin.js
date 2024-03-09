@@ -130,7 +130,7 @@ router.get("/add-post", middleware, async (req, res) => {
       description: "Dashboard Description",
     };
     const data = await Post.find();
-    res.render("admin/dashboard-project", { local, data, layout: projectlayout });
+    res.render("admin/add-post", { local, data, layout: projectlayout });
   } catch (error) {
     console.log(error);
   }
@@ -144,7 +144,6 @@ router.post("/add-post", middleware, async (req, res) => {
       body,
     });
     await newPost.save();
-    console.log(req.body);
     res.redirect("/dashboard");
   } catch (error) {
     console.log(error);

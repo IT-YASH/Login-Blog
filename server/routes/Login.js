@@ -13,10 +13,11 @@ router.get("/login", (req, res) => {
 
 router.post("/login", async (req, res) => {
   try {
-    const { username_login, password_login } = req.body;
+    const { username_login, password_login, email_login } = req.body;
     const newUser = new Login({
       username_login,
       password_login,
+      email_login
     });
     await newUser.save();
     res.json({ message: "Successfully stored Data in Databse" });
