@@ -25,7 +25,7 @@ const middleware = (req, res, next) => {
 };
 
 router.get("/admin", async (req, res) => {
-  try {
+  try { 
     const local = {
       title: "Admin",
       description: "This Page is Handled by Admin",
