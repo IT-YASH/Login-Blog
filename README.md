@@ -1,1 +1,1 @@
-This Repo contain both code for registration form and blog 
+# The Website is Live But Due to facing some Problems(EJS) it's not Available.i'll be soon Encouter this Problem Stay Tuned!!! 
