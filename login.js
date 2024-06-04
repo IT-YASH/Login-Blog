@@ -40,7 +40,7 @@ app.set("view engine", "ejs");
 
 app.use("/", require("./server/routes/main.js"));
 app.use("/", require("./server/routes/admin.js"));
-app.use("/", require("./server/routes/project.js"));
+// app.use("/", require("./server/routes/project.js"));
 app.use("/", require("./server/routes/Login.js"));
 
 app.listen(port, () => {
